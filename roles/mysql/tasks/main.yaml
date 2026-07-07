@@ -5,7 +5,7 @@
 # - name: print root password
 #   debug:
 #     msg: "{{ root_password.mysql_root_password }}"
--- name: install mysql server
+- name: install mysql server
   package:
     name: mysql-server
     state: present
