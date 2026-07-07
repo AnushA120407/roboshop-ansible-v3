@@ -5,13 +5,13 @@
 # - name: print root password
 #   debug:
 #     msg: "{{ root_password.mysql_root_password }}"
-- name: install mysql server
+-- name: install mysql server
   package:
     name: mysql-server
     state: present
 - name: install boto3 botocore
-   pip:
-     name:
+  pip:
+    name:
     - boto3
     - botocore
     executable: pip3.9
